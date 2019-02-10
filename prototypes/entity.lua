@@ -2,7 +2,7 @@ local electric_kettle = table.deepcopy(data.raw["boiler"]["boiler"])
 
 local override = {
     name = "electric-kettle",
-    energy_consumption = "1.8MW", -- calculated for 100 steam/sec at 105 C
+    energy_consumption = "3.6MW", -- calculated for 100 steam/sec at 195 C
     minable =
     {
         hardness = 0.2,
@@ -15,7 +15,7 @@ local override = {
         drain = "0.1kW",
         usage_priority = "secondary-input",
     },
-    target_temperature = 105,
+    target_temperature = 195,
     fire_glow_flicker_enabled = false,
     burning_cooldown = 10,
     fire_flicker_enabled = false
